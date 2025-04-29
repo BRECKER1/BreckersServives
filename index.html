@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Brecker's Services - Création de sites web, logos, CV, e-commerce et services de marketing digital. Boostez votre business avec nos solutions numériques.">
+  <title>Brecker's Services</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<script>
+  function handleOrientationBlock() {
+    const blocker = document.getElementById("block-orientation");
+    if (window.innerHeight > window.innerWidth) {
+      blocker.style.display = "flex";
+      document.body.style.overflow = "hidden";
+    } else {
+      blocker.style.display = "none";
+      document.body.style.overflow = "auto";
+    }
+  }
+
+  window.addEventListener("load", handleOrientationBlock);
+  window.addEventListener("resize", handleOrientationBlock);
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const services = document.querySelectorAll('.service-item');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, {
+      threshold: 0.3
+    });
+
+    services.forEach(service => {
+      observer.observe(service);
+    });
+  });
+</script>
+
+
+<script>
+  (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="5-1EHUlM8B9tXmQEQ64Lp";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+  </script>
+  <body>
+<div id="block-orientation" style="display: none;">
+  <div class="orientation-content">
+    <div class="phone-icon"></div>
+    <p>Pour une meilleure expérience, veuillez passer en <strong>mode paysage</strong>.</p>
+  </div>
+</div>
+
+
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="logo">
+      <a href="#">MonSite</a>
+    </div>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="apropos.html">À propos</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="store.html">Store</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="menu-toggle">&#9776;</div>
+
+  </nav>
+
+  <!-- BANNIÈRE -->
+  <header class="page-banner" style="background-image: url('images/couvert-index.jpg');">
+    <div class="banner-overlay">
+      <div class="banner-content">
+        <h1>Innovation et expertise au service de votre business</h1>
+        <p>Découvrez comment nos solutions numériques peuvent booster votre business</p>
+        <a href="#services" class="btn">Découvrir nos services</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECTION SERVICES -->
+  <section id="services" class="services-section" data-aos="fade-up">
+    <h2>Nos Services</h2>
+    <div class="services-container">
+      <div class="service-item" data-aos="flip-left">
+        <img src="images/cv.jpg" alt="Création de CV pro">
+        <p>Création de CV professionnels</p>
+      </div>
+      <div class="service-item" data-aos="flip-left">
+        <img src="images/logo.jpg" alt="Logo design">
+        <p>Conception de logos modernes</p>
+      </div>
+      <div class="service-item" data-aos="flip-left">
+        <img src="images/steweb.jpg" alt="Site web vitrine">
+        <p>Développement de sites web vitrines</p>
+      </div>
+      <div class="service-item" data-aos="flip-left">
+        <img src="images/couv-store.png" alt="Vente en ligne (e-commerce)">
+        <p>Ventes en ligne (e-commerce)</p>
+      </div>
+      <div class="service-item" data-aos="flip-left">
+        <img src="images/flyer.jpg" alt="Community management & marketing digital">
+        <p>Community manager & marketing digital</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION TÉMOIGNAGES -->
+  <section id="testimonials" class="testimonials-section" data-aos="fade-up">
+    <h2>Témoignages</h2>
+    <div class="testimonials-container">
+      <div class="testimonial">
+        <p>"Brecker's Services a transformé notre présence en ligne. Nous avons vu une augmentation de 40% de notre trafic après leur intervention !" - Client 1</p>
+      </div>
+      <div class="testimonial">
+        <p>"Le design de notre logo a vraiment fait la différence. Un service rapide et professionnel !" - Client 2</p>
+      </div>
+      <div class="testimonial">
+        <p>"Un site web magnifique, fonctionnel et adapté à notre image. Nous sommes ravis des résultats !" - Client 3</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION PORTFOLIO -->
+  <section id="portfolio" class="portfolio-section" data-aos="fade-up">
+    <h2>Mon Portfolio</h2>
+    <div class="portfolio-container">
+      <div class="portfolio-item">
+        <img src="images/projet1.jpg" alt="Projet 1">
+        <p>Logo conçu pour une entreprise locale</p>
+        <a href="portfolio.html" class="btn">Voir le projet</a>
+      </div>
+      <div class="portfolio-item">
+        <img src="images/projet2.jpg" alt="Projet 2">
+        <p>Site web vitrine pour une startup</p>
+        <a href="portfolio.html" class="btn">Voir le projet</a>
+      </div>
+      <div class="portfolio-item">
+        <img src="images/projet3.jpg" alt="Projet 3">
+        <p>Conception de flyer et support marketing</p>
+        <a href="portfolio.html" class="btn">Voir le projet</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Brecker's Services. Tous droits réservés.</p>
+      <div class="social-links">
+        <a href="#"><img src="images/OIP (8).jpeg" alt="Facebook"></a>
+        <a href="#"><img src="images/How-to-Create-WhatsApp-Account.jpg" alt="WhatsApp"></a>
+        <a href="#"><img src="images/R.png" alt="Instagram"></a>
+      </div>
+      <p><a href="contact.html">Contactez-nous</a> | <a href="privacy-policy.html">Politique de confidentialité</a></p>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
